@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<style>
+.parallax {
+    background-image: url("./1.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2{
+  background-image: url("./2.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  color:#FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  height: 150px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 5px;
+}
+.button#id1{
+  background: url("./train.png") no-repeat scroll 0 0 transparent;
+}
+.button#id2{
+  background: url("./bus.png") no-repeat scroll 0 0 transparent;
+}
+.button#id3{
+  background: url("./flight.png") no-repeat scroll 0 0 transparent;
+}
+.button#id4{
+  background: url("./games.png") no-repeat scroll 0 0 transparent;
+}
+.button#id5{
+  background: url("./movie.png") no-repeat scroll 0 0 transparent;
+}
+.button#id6{
+  background: url("./party.png") no-repeat scroll 0 0 transparent;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.footer{
+  padding:20px;
+  margin-top:20px;
+  color:#1E90FF;
+  border-top: #1E90FF 3px solid;
+  background-color:white;
+  text-align: center;
+}
+</style>
+
+<title>Ticket booking System</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<body>
+
+<!-- Navigation -->
+
+<header>
+  <div class="container">
+    <div id="branding">
+      <a href="first.html"><h1><span class="highlight" >Booket</span> </h1></a>
+    </div>
+    <nav>
+      <ul>
+        <li class="current"><a href="first.html">Home</a></li>
+        <li class="default"><a href="about_us.html">About Us</a></li>
+        <li class="default"><a href="contact_us.html">Contact Us</a></li>
+        <li class="default"><a href="sign_in.html">Sign In</a></li>
+        <li class="default"><a href="sign_up.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="plane">
+  <div class="parallax"></div>
+  <div class="centered">Fly With Us.</div>
+</div>
+
+
+<section class="container" style="max-width:800px">
+  <h2 class="wide">Book With Us.</h2>
+  <p class="opacity"><i>We love Travelling</i></p>
+  <p class="justify"<p>When I think about travel, my very initial thoughts usually tend to go as far as relaxation and  excitement. I think of the opportunity to rest from the daily routine, and a chance to set off to unfamiliar destinations while putting everything else on hold. But, if I allow my thoughts to wander off just a little bit farther (and I always do),I eventually find myself making sure that my adventures abroad are somehow connected to the life which I currently live. In other words, I like to think that wherever I may set off to, and whatever I will choose to do, will ultimately affect me or the world in which I live in a positive way. Just thinking about travel in this way makes me feel totally excited to discover what my next journey has in store for me. These thoughts are what initially sparked my interest in the exciting world of impact experiences. </p>
+</section>
+
+<div class="container">
+<div class="boxes">
+      <a href="train.html"><button class="button" id="id1" style="vertical-align:middle" ><span> TRAIN </span></button></a>
+      <a href="bus.html"><button class="button" id="id2" style="vertical-align:middle"><span> BUS </span></button></a>
+      <a href="flight.html"><button class="button" id="id3" style="vertical-align:middle"><span> FLIGHT </span></button></a>
+  </div>
+
+<div class="boxes">
+      <a href=" https://www.gamespot.com/"><button class="button" id="id4" style="vertical-align:middle"><span> GAMES </span></button></a>
+      <a href="https://in.bookmyshow.com/bengaluru"><button class="button" id="id5" style="vertical-align:middle"><span> MOVIES </span></button></a>
+      <a href="http://www.bookeventz.com/"><button class="button" id="id6" style="vertical-align:middle"><span> EVENTS </span></button></a>
+</div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>Booket, Copyrights &copy; 2017</p>
+<a href="https://www.facebook.com/?stype=lo&jlou=AfdWpwwuE-qrZBmY18aLITCK20GzcTRmcNmbW1msl1s1hMZzVzIK74rt--xiUqg93F9vrKJDP-HgN2sNGpMwf4tMzKAy_qrHA_EGeu7cV_P9lQ&smuh=19917&lh=Ac9ihidtUlK0xyYW" target="_blank"><img src="http://www.niftybuttons.com/scribble/facebook.png" border="0" margin="1px"></a><a href="https://twitter.com/" target="_blank"><img src="http://www.niftybuttons.com/scribble/twitter.png" border="0" margin="1px"></a><a href="https://in.linkedin.com/" target="_blank"><img src="http://www.niftybuttons.com/scribble/linkedin.png" border="0" margin="1px"></a><a href="https://www.youtube.com/" target="_blank"><img src="http://www.niftybuttons.com/scribble/youtube.png" border="0" margin="1px"></a>
+</div>
+
+</body>
+</html>
